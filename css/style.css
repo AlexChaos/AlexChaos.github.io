@@ -247,7 +247,8 @@ img {
   }
 
   .page-content__link-repo {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    
   }
 
   .wrapper-caption {
@@ -316,22 +317,3 @@ img {
 
 }
 
-@media screen and (max-width: 960px){
-  .page-content__header {
-    padding-top: 140px;
-  }
-
-  .content-mishka,
-  .content-aotsk {
-    height: auto;
-  }
-
-  .page-content__link-block {
-    padding-bottom: 80px;
-  }
-
-  .page-content__text {
-    margin-bottom: 300px;
-  }
-
-}
