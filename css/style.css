@@ -301,3 +301,37 @@ img {
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 768px){
+  .page-content__link-block {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .content-mishka,
+  .content-aotsk {
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 960px){
+  .page-content__header {
+    padding-top: 140px;
+  }
+
+  .content-mishka,
+  .content-aotsk {
+    height: auto;
+  }
+
+  .page-content__link-block {
+    padding-bottom: 80px;
+  }
+
+  .page-content__text {
+    margin-bottom: 300px;
+  }
+
+}
