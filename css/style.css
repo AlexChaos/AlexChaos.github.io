@@ -242,12 +242,12 @@ img {
 @media screen and (max-width: 320px){
   .page-content__link-block {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 
   .page-content__link-repo {
-    margin-bottom: 0px;
+    margin-bottom: 60px;
     
   }
 
