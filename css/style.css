@@ -337,6 +337,14 @@ img {
   .page-content__text {
     margin-bottom: 120px;
   }
+  
+  .page-content__text:hover a {
+    transform: scale(2);
+  }
+  
+  .page-content__text--effect:hover span {
+    transform: scale(2);
+  }
 
 }
 
