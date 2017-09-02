@@ -238,10 +238,10 @@ img {
   border-bottom: 1px solid gray;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
   .page-content__link-block {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
 
@@ -252,7 +252,7 @@ img {
   }
 
   .page-content__text {
-    margin-bottom: 80px;
+    padding-bottom: 100px;
   }
 
   .wrapper-caption {
@@ -281,6 +281,7 @@ img {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 0.8rem;
+    margin-bottom: 60px;
   }
 
   .page-content__header {
@@ -309,29 +310,47 @@ img {
   .page-content__link-repo,
   .page-content__link-prod {
     font-size: 0.6rem;
-    width: 200px;
+    width: 250px;
   }
 
 }
 
 @media screen and (min-width: 768px){
+  .page-content__link-block {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .page-content__header {
-    padding-top: 20px;
+    padding-top: 100px;
   }
 
   .page-content__link-block {
     padding-bottom: 120px;
   }
 
+  .page-content__link-repo {
+    margin-bottom: 0;
+  }
+
+  .page-content__text {
+    margin-bottom: 120px;
+  }
+
 }
 
 @media screen and (min-width: 960px){
   .page-content__header {
-    padding-top: 90px;
+    padding-top: 150px;
   }
 
   .page-content__link-block {
     padding-bottom: 180px;
+  }
+
+  .page-content__text {
+    margin-bottom: 180px;
   }
 
 }
@@ -342,19 +361,43 @@ img {
   }
 
   .content-wrapper {
-    padding-top: 100px;
+    padding-top: 120px;
+  }
+
+  .page-content__text {
+    margin-bottom: 200px;
+  }
+
+  .page-content__link-repo,
+  .page-content__link-prod {
+    font-size: 1rem;
+  }
+
+  .wrapper-caption {
+    flex-direction: row;
+  }
+
+  .main-caption,
+  .subtitle {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 2rem;
+  }
+
+  .main-caption {
+    padding-right: 20px;
   }
 
 }
 
 @media screen and (min-width: 1920px){
   .page-content__header {
-    padding-top: 100px;
+    padding-top: 150px;
     font-size: 2rem;
   }
 
   .page-content__text {
-    padding-bottom: 460px;
+    margin-bottom: 380px;
     font-size: 2rem;
   }
 
@@ -363,7 +406,7 @@ img {
   }
 
   .content-wrapper {
-    padding-bottom: 320px;
+    padding-bottom: 280px;
   }
 
   .page-content__link-repo,
@@ -373,10 +416,15 @@ img {
     font-size: 1.5rem;
   }
 
-  .main-caption, .subtitle {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .main-caption,
+  .subtitle {
+    padding-top: 60px;
+    padding-bottom: 60px;
     font-size: 2.2rem;
+  }
+
+  .wrapper-caption {
+    flex-direction: row;
   }
 
 }
